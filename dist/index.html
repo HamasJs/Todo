@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do-List</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <div class="logo">
+        <img src="images/microchip.png" alt="" width="60px" />
+      </div>
+      <div class="toggle">Hello</div>
+    </nav>
+    <div class="main-page">
+      <div class="sidebar">
+        <div class="profile">
+          <div class="upper-profile">
+            <div class="profile-icon">
+              <img src="images/microchip.png" alt="" class="pf-icon" />
+            </div>
+            <div class="profile-text">
+              <div class="upper-text">
+                <h4>Hamas Mughal</h4>
+              </div>
+              <div class="lower-text">
+                <p>Free Plan</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="home">
+          <div class="label">
+            <h3>Home</h3>
+          </div>
+          <div class="line">
+            <hr />
+          </div>
+
+          <div class="All-Tasks active" id="All-Tasks">
+            <h3>✅ All Tasks</h3>
+          </div>
+          <div class="All-Tasks" id="Today-Tasks">
+            <h3>📅 Today</h3>
+          </div>
+          <div class="All-Tasks" id="Weekly-Tasks"> 
+            <h3>⏭️ Weekly</h3>
+          </div>
+          <div class="All-Tasks" id="Important-Tasks">
+            <h3>⭐ Important</h3>
+          </div>
+        </div>
+      </div>
+      <div class="main">
+        <div class="title">All Tasks</div>
+        <div class="tasks">
+        </div>
+        <div class="task-form hidden">
+          <div class="input-1">
+            <label for="">Title</label>
+            <input type="text" placeholder="Enter Title" id="Title" required/>
+          </div>
+          <div class="input-1" >
+            <label for="">Details(optional)</label>
+            <input type="text" placeholder="Details....." class="details" id="Details" required/>
+          </div>
+          <div class="input-1">
+            <label for="">Date</label>
+            <input type="date" id= "Date" required/>
+          </div>
+          <div class="buttons-task">
+            <button class="add-task-form">Add</button>
+            <button class="cancel-task">Cancel</button>
+          </div>
+        </div>
+        <div class="bt">
+          <button class="create-task">➕ Add task</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
